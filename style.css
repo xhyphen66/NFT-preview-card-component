@@ -1,0 +1,125 @@
+/* css reset */
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+body, h1, h2, h3, h4, h5, p, figure, picture {
+    margin: 0;
+}
+
+img, picture {
+    max-width: 100%;
+    display: block;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-weight: 400;
+}
+
+/* custom properties */
+
+:root {
+    /* colors */
+--softblue: hsl(215, 51%, 70%);
+--cyan: hsl(178, 100%, 50%);
+--veryDarkBlueBg: hsl(217, 54%, 11%);
+--veryDarkBlueCardBg: hsl(216, 50%, 16%);
+--veryDarkBlueLine: hsl(215, 32%, 27%);
+--white: hsl(0, 0%, 100%);
+
+}
+
+/* classes */
+
+.flex {
+    display: flex;
+}
+
+.d-block {
+    display: block;
+}
+
+.d-inline-block {
+    display: inline-block;
+}
+
+.flow > * + * {
+    margin-top: var(--flow-space, 1rem);
+}
+
+.card {
+    background-color: var(--veryDarkBlueCardBg);
+    width: 350px;
+    border-radius: 20px;
+    padding: 1.5rem;
+}
+
+/* Layout */
+
+body {
+    font-family: 'Outfit', sans-serif;
+
+    background-color: var(--veryDarkBlueBg);
+    color: var(--white);
+
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-img img {
+    border-radius: 15px;
+}
+
+.card-header h1 {
+    font-weight: 600;
+}
+
+.card-header p {
+    font-weight: 300;
+    color: var(--softblue);
+}
+
+.stats {
+    justify-content: space-between;
+
+    border-bottom: 1px solid var(--veryDarkBlueLine);
+    padding-bottom: 1rem;
+}
+
+.stats span:first-child {
+    font-weight: 400;
+    color: var(--cyan);
+    margin-left: 0.25rem;
+}
+
+.stats span:last-child {
+    font-weight: 300;
+    color: var(--softblue);
+    margin-left: 0.25rem;
+}
+
+.creator {
+    align-items: center;
+}
+
+.creator img {
+    width: 15%;
+}
+
+.creator p {
+    margin-left: 0.75rem;
+    color: var(--softblue);
+    font-weight: 300;
+}
+
+.creator p > span {
+    margin-left: 0.25rem;
+    font-weight: 600;
+    color: var(--white);
+}
