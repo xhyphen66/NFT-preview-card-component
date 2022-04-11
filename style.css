@@ -25,8 +25,8 @@ h1, h2, h3, h4, h5, h6, p {
 
 :root {
     /* colors */
---softblue: hsl(215, 51%, 70%);
---cyan: hsl(178, 100%, 50%);
+--softblue: rgb(139, 172, 218);
+--cyan: rgb(0, 255, 247);
 --veryDarkBlueBg: hsl(217, 54%, 11%);
 --veryDarkBlueCardBg: hsl(216, 50%, 16%);
 --veryDarkBlueLine: hsl(215, 32%, 27%);
@@ -92,7 +92,7 @@ body {
     padding-bottom: 1rem;
 }
 
-.stats span:first-child {
+.stats #eth {
     font-weight: 400;
     color: var(--cyan);
     margin-left: 0.25rem;
@@ -109,7 +109,10 @@ body {
 }
 
 .creator img {
-    width: 15%;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid white;
 }
 
 .creator p {
